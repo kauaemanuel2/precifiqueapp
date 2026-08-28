@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#8b5cf6">
+  <title>Precifica Fácil</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <div class="eyebrow">SEU NEGÓCIO</div>
+        <h1>Precifica</h1>
+      </div>
+      <button class="icon-btn" id="settingsQuick" aria-label="Configurações">⚙</button>
+    </header>
+
+    <main id="app" class="content"></main>
+
+    <nav class="bottom-nav">
+      <button data-route="dashboard" class="nav-item active"><span>⌂</span><small>Início</small></button>
+      <button data-route="products" class="nav-item"><span>◈</span><small>Produtos</small></button>
+      <button data-route="materials" class="nav-item"><span>◇</span><small>Materiais</small></button>
+      <button data-route="finance" class="nav-item"><span>◎</span><small>Financeiro</small></button>
+    </nav>
+  </div>
+
+  <div id="modalRoot"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
